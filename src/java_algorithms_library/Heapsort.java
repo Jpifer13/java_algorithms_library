@@ -5,6 +5,6 @@ public class Heapsort {
     
     Heapsort(int[] incoming_array){
         arr = incoming_array;
-
+        System.out.print(arr);
     }
 }
