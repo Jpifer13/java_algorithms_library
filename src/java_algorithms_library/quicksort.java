@@ -16,11 +16,10 @@ public class Quicksort {
      * @param incoming_array This incoming array and its type
      * @param ord The order that we wnat to sort the array True ascending false descending
      */
-    int[] Quicksort(int[] incoming_array, boolean ord){
+    Quicksort(int[] incoming_array, boolean ord){
         int_arr = incoming_array;
         order = ord;
         System.out.print(int_arr);
-        return(int_arr);
     }
 
     Quicksort(float[] incoming_array, boolean ord){
@@ -51,6 +50,10 @@ public class Quicksort {
         string_arr = incoming_array;
         order = ord;
         System.out.print(string_arr);
+    }
+
+    public int[] get_int_array(){
+        return int_arr;
     }
 
     /**
