@@ -7,13 +7,23 @@ import static org.junit.jupiter.api.Assertions.*;
 class QuicksortTest {
 
     @org.junit.jupiter.api.Test
-    void integer_quicksort() {
+    void quicksort_integer() {
         final int[] test_int_arr = {3, 6, 34, 1, 8};
 
-//        final int[] expected = {1, 3, 6, 8, 34};
-        final int[] expected = {3, 6, 34, 1, 8};
-
+        final int[] expected = {1, 3, 6, 8, 34};
         final int[] actual = (new Quicksort(test_int_arr, true)).get_int_array();
+//        System.out.println(Arrays.toString(actual));
+
+        assertEquals(Arrays.toString(actual), Arrays.toString(expected));
+    }
+
+    @org.junit.jupiter.api.Test
+    void quicksort_double() {
+        final double[] test_int_arr = {3.5, 6.0, 34.01, 1.55, 8.9};
+
+        final double[] expected = {1.55, 3.5, 6.0, 8.9, 34.01};
+        final double[] actual = (new Quicksort(test_int_arr, true)).get_double_array();
+//        System.out.println(Arrays.toString(actual));
 
         assertEquals(Arrays.toString(actual), Arrays.toString(expected));
     }
