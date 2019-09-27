@@ -28,7 +28,7 @@ public class Quicksort {
             string_arr[i] = String.valueOf(int_arr[i]);
         }
         if(order == false){
-            string_arr = reverse_array(string_arr);
+            string_arr = Helpers.reverse_array(string_arr);
         }
     }
 
@@ -209,9 +209,6 @@ public class Quicksort {
         return i+1;
     }
 
-    private String[] reverse_array(String[] arr){
-        Collections.reverse(Arrays.asList(arr));
-        return arr;
-    }
+
 
 }

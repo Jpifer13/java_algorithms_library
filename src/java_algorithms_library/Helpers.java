@@ -1,6 +1,8 @@
 package java_algorithms_library;
 
 import java.math.BigInteger;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class Helpers {
     
@@ -82,5 +84,10 @@ public class Helpers {
             return false;
         }
         return true;
+    }
+
+    public static String[] reverse_array(String[] arr){
+        Collections.reverse(Arrays.asList(arr));
+        return arr;
     }
 }
