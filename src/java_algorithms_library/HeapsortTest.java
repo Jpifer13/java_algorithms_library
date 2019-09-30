@@ -9,16 +9,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class HeapsortTest {
 
 
-    @org.junit.jupiter.api.Test
-    void heapsort_integer() {
-        final int[] test_int_arr = {3, 6, 34, 1, 8};
-
-        final int[] expected = {1, 3, 6, 8, 34};
-        final int[] actual = (new Heapsort(test_int_arr, true)).get_int_array();
-//        System.out.println(Arrays.toString(actual));
-
-        assertEquals(Arrays.toString(actual), Arrays.toString(expected));
-    }
+//    @org.junit.jupiter.api.Test
+//    void heapsort_integer() {
+//        final int[] test_int_arr = {3, 6, 34, 1, 8};
+//
+//        final int[] expected = {1, 3, 6, 8, 34};
+//        final int[] actual = (new Heapsort(test_int_arr, true)).get_int_array();
+////        System.out.println(Arrays.toString(actual));
+//
+//        assertEquals(Arrays.toString(actual), Arrays.toString(expected));
+//    }
 
 //    @org.junit.jupiter.api.Test
 //    void heapsort_double() {
